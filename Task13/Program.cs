@@ -18,9 +18,10 @@ if (n > 99){
     Console.Write($"В числе {n} -> {d}");
 }
 else if (n < -99){
+    n = n * -1;
     int d = Dig3(n);
-    d = d * -1;
-    Console.Write($"В числе {n} -> {d}");
+    
+    Console.Write($"В числе {n * -1} -> {d}");
 }
 else{
     Console.Write($"В числе {n} -> третьей цифры нет");
